@@ -1,0 +1,354 @@
+html {
+    font-size: 62.5%;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+/* athiti-500 - latin */
+@font-face {
+  font-family: 'Athiti';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/athiti-v12-latin-500.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/athiti-v12-latin-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/athiti-v12-latin-500.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/athiti-v12-latin-500.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/athiti-v12-latin-500.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/athiti-v12-latin-500.svg#Athiti') format('svg'); /* Legacy iOS */
+}
+
+/* athiti-regular - latin */
+@font-face {
+  font-family: 'Athiti';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/athiti-v12-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/athiti-v12-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/athiti-v12-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/athiti-v12-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/athiti-v12-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/athiti-v12-latin-regular.svg#Athiti') format('svg'); /* Legacy iOS */
+}
+
+/* merienda-regular - latin */
+@font-face {
+  font-family: 'Merienda';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/merienda-v17-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/merienda-v17-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/merienda-v17-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/merienda-v17-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/merienda-v17-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/merienda-v17-latin-regular.svg#Merienda') format('svg'); /* Legacy iOS */
+}
+
+/* merienda-700 - latin */
+@font-face {
+  font-family: 'Merienda';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/merienda-v17-latin-700.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/merienda-v17-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/merienda-v17-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/merienda-v17-latin-700.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/merienda-v17-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/merienda-v17-latin-700.svg#Merienda') format('svg'); /* Legacy iOS */
+}
+
+
+
+/* styles du modèle de démo */
+
+body {
+    font-size: 1.8rem;
+    background-color: #eee;
+    color: black;
+    font-family: 'Athiti';
+    font-style: normal;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+}
+
+h2, h3, h4 {
+    font-family: 'Merienda';
+    font-style: normal;
+    font-weight: 700;
+}
+
+img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+audio, video {
+    max-width: 100%;
+}
+
+ul, ol {
+    list-style: none;
+    padding: unset;
+}
+
+
+.container {
+    margin: auto;
+}
+
+.WA {
+    text-align: center;
+    background-color: #ddd;
+    border: 1px solid #555;
+    padding: 2rem;
+}
+/*polices*/
+h1 {
+    text-transform: uppercase;
+}
+h2 {
+    font-size: 3rem;
+}
+h3 {
+    font-size: 2.5rem;
+}
+h4 {
+    font-size: 2rem;
+}
+
+footer h4 {
+    font-size: 1.8rem;
+    font-style: italic;
+}
+footer {
+    font-size: 1.6rem;
+}
+/*style header*/
+
+header {
+    text-align: center;
+    color: black;
+    background: linear-gradient(to bottom, rgba(208,197,186,1) 0%,rgba(235,227,219,0.25) 25%,rgba(255,255,255,0) 100%);
+    margin-bottom: 5rem;
+}
+
+header img {
+    width: 20%;
+}
+
+h1::before, h1::after, .container h2::before, h2::after, h3::before, h3::after, h4::before, h4:after {
+    content: "\f005";
+    font-family: FontAwesome;
+    font-size: 1rem;
+    color: #950000;
+    vertical-align: middle;
+    margin: 1rem;
+}
+
+header a {
+    display: block;
+    color: black;
+    background-color: #ebe3db;
+    border-top: 1px solid black;
+}
+
+nav {
+    background-color: #ebe3db;
+}
+
+header ul {
+    border-bottom: 1px solid black;
+    
+}
+
+header a:hover {
+    color: white;
+    background-color: #950000;
+    transition: 2s;
+}
+
+/* style slider*/
+
+
+.slick-prev::before, .slick-next::before {
+    font-size: 30px;
+
+}
+
+.slick-dots li button::before {
+    font-size: 15px;
+}
+
+.slick-dots li.slick-active button::before {
+    color: #950000;
+}
+
+.slick-prev {
+  left: 20px;
+  z-index: 3;
+}
+
+.slick-next {
+  right: 25px;
+}
+
+/* style page*/
+
+article {
+    margin: 5rem 0 5rem 0;
+}
+
+h2, h3, h4 {
+    text-align: center;
+}
+
+.flex1 {
+    display: flex;
+    flex-direction: column;
+    margin: 4rem;
+}
+
+.menu {
+    background-color: #ebe3db;
+    margin: 4rem;
+    padding: 3em 0 3rem 0;
+}
+
+.menu li::before {
+    content: "\f005";
+    font-family: FontAwesome;
+    font-size: 1rem;
+    color: #950000;
+    vertical-align: middle;
+    margin: 1rem;
+}
+
+.menu li {
+    border-bottom: dotted black 2px;
+    padding: 0.5rem 0 0.5rem 4rem;
+}
+
+/*survol images menu*/
+
+
+figure img {
+    display: block;
+}
+
+figure {
+    position:relative;
+    display: inline-block;
+    margin: auto;
+}
+
+
+.border {
+    border: solid white 4px;
+    text-align: center;
+    color: white;
+}
+
+.prix {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+figcaption {
+    background-color: rgba(76,67,67,.9);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 2s;
+    opacity: 0;
+}
+
+figcaption:hover {
+    opacity: 1;
+}
+
+/*bouton*/
+
+.container a {
+    background-color: #4c4343;
+    text-decoration: none;
+    color: white;
+    display: block;
+    text-align: center;
+    margin: 2rem;
+}
+.container a img {
+    width: 2rem;
+    height: auto;
+    vertical-align: middle;
+    margin: 1rem;
+}
+
+footer article {
+    text-align: center;
+    color: white;
+    background: url(../img/images/footer-bg.jpg);
+}
+
+footer h4 {
+    font-size: 1.8rem;
+    border-bottom: white dotted 1px;
+    margin: 2rem;
+}
+
+footer i {
+    font-size: 4rem;
+}
+
+@media screen and (min-width: 730px) {
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+        border: none;
+    }
+    header a {
+        border: none;
+        padding: 1em 2em;
+}
+
+@media screen and (min-width: 1100px) {
+    header {
+        display: flex;
+        align-items: center;
+    }
+    nav {
+        background-color: transparent;
+    }
+   .logo {
+       display: flex;
+       align-items: center;
+    }
+   nav li  {
+        margin: 0 0 0 2rem;
+    }
+    .flex1 {
+        display: flex;
+    }
+    .flex2 {
+        display: flex;
+        }
+    footer article {
+            display: flex;
+            justify-content: space-around;
+        }
+}

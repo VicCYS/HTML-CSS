@@ -1,0 +1,304 @@
+html {
+    font-size: 62.5%;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1.6rem;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato';
+    line-height: 1.5;
+    color: #333;
+}
+
+ul, li {
+    list-style: none;
+    padding: 0;
+}
+
+/* lato-regular - latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/lato-v23-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/lato-v23-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/lato-v23-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/lato-v23-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/lato-v23-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/lato-v23-latin-regular.svg#Lato') format('svg'); /* Legacy iOS */
+}
+/* lato-700 - latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/lato-v23-latin-700.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/lato-v23-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/lato-v23-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/lato-v23-latin-700.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/lato-v23-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/lato-v23-latin-700.svg#Lato') format('svg'); /* Legacy iOS */
+}
+
+/*header*/
+header {
+    text-align: center;
+}
+
+header nav {
+    background-color: #40CCEA;
+}
+
+.headnav {
+    display: flex;
+    background-color: #40CCEA;
+    justify-content: space-between;
+    width: 900px;
+    margin: auto;
+}
+
+.headnav a {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    padding: 1em;
+}
+
+header p {
+    font-size: 4.5rem;
+    color: #40CCEA;
+    word-spacing: 1rem;
+    border-bottom: dotted 1px #40CCEA;
+}
+
+
+h1 {
+    text-transform: uppercase;
+}
+
+.container {
+    width: 900px;
+    margin: auto;
+}
+
+.vienne {
+    display: flex;
+    border-bottom: 1px black solid;
+    padding-bottom: 3rem;
+    align-items: flex-end;
+}
+
+.maroc {
+    display: flex;
+    flex-direction: row-reverse;
+    border-bottom: 1px black solid;
+    padding-bottom: 3rem;
+    align-items: flex-start;
+}
+
+.last {
+    max-width: 49%;
+    margin-right: 2rem;
+}
+
+.last1 {
+    max-width: 49%;
+    margin-left: 2rem;
+}
+/*style bouton*/
+
+.btn {
+    background-color: #0096D0;
+    border-radius: 6px;
+    color: white;
+    text-align: center;
+    padding: 0.5em;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #AAAAAA;
+}
+
+.btn:active {
+    background-color: #EEEEEE;
+}
+
+.savoir {
+    margin-right: auto;
+}
+
+.pagin {
+    text-align: center;
+    margin: 3rem auto 6rem auto;
+}
+
+
+/*style tableau*/
+table {
+    border-collapse: collapse;
+    margin: 4rem auto;
+    width: 900px;
+}
+th, td {
+    border: 1px solid #CCCCCC;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-align: left;
+}
+
+tbody th {
+    font-weight: normal;
+}
+
+tbody tr:nth-child(2n+1) {
+    background-color: #EEEEEE;
+}
+
+.tablesmall {
+    padding:1em 3em;
+    text-align: center;
+}
+
+.tablelarge {
+    padding: 1em 6em;
+    text-align: center;
+}
+
+/*a propos*/
+
+.bcgimg {
+    background: url(../img/fond.jpg) center;
+    background-size: cover;
+    padding: 2em 2em;
+}
+
+.propos {
+    background-color: white;
+    width: 50%;
+    padding: 2em 1em;
+}
+
+/*contact*/
+
+adress {
+    line-height: 2;
+}
+
+adress a {
+    text-decoration: none;
+}
+
+.fieldcontact {
+    background: url(../img/map-image.png) center #444 ;
+}
+
+.inputarea {
+    display: flex;
+    justify-content: space-between;
+    height: 150px;
+}
+
+.inputflex {
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    margin: 1rem 1rem;
+    width: 40%;
+    
+}
+
+input[type="text"], input[type="tel"], input[type="email"] {
+    border-radius: 6px;
+    padding: 0.5em;
+}
+textarea {
+    resize: none;
+    border-radius: 6px;
+    margin: 1rem 1rem;
+    width: 40%;
+}
+
+input[type="submit"] {
+    display: block;
+    margin: 2rem auto;
+    background-color: #0096D0;
+    border-radius: 6px;
+    color: white;
+    padding: 1em 2em;
+    text-decoration: none;
+}
+
+/*icon*/
+
+.fa-facebook, .fa-twitter, .fa-pinterest, .fa-instagram {
+    font-size: 4rem;
+}
+
+.fa-facebook {
+    background-color: #4267B2;
+    color: white;
+    border-radius: 5px;
+}
+
+.fa-twitter {
+    background-color: #1da1f2;
+    color: white;
+    border-radius: 5px;
+}
+
+.fa-pinterest {
+    color: #bd081c;
+}
+
+.fa-instagram {
+    color : #8948C1;
+}
+/*footer*/
+
+footer {
+    text-align: center;
+    background-color: #40CCEA;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+/*vienne*/
+
+iframe {
+    display: block;
+    margin: auto;
+    width: 900px;
+    height:300px;
+}
+
+.visitflex {
+    background-color: #AAAAAA;
+    padding: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+
+.visitflex article {
+    text-align: center;
+    margin-top: 1rem ;
+    background-color: white;
+    width: 48%;
+}
+
+.imgvis {
+    width: -webkit-fill-available;
+}
+
+
+
+
